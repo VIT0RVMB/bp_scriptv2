@@ -15,7 +15,7 @@ def published(page,status, authtoken):
 	keys=Keys()
 	custom_header={
 		"auth-token":authtoken,
-		"app-token":keys.app_token   #"OWnMrcGiEeFf"
+		"app-token":keys.app_token 
 	}
 	
 	file=codecs.open(status+' - '+custom_header['auth-token']+'.txt', 'a+b', 'utf-8')
